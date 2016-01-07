@@ -8,6 +8,15 @@
 
 #import "HFOMainViewController.h"
 
+@interface HFOMainViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *resultLab;
+@end
+
 @implementation HFOMainViewController
 
+- (IBAction)scanButton:(id)sender {
+    NSString *abc = @"aaa-bbb-ccc";
+    NSString *cba = [abc stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    NSLog(@"%@", cba);
+}
 @end

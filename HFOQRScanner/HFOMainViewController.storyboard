@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gK2-F5-UVf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--H  F  O-->
+        <scene sceneID="Wcn-2f-xYn">
+            <objects>
+                <viewController id="bzD-jg-Hq9" customClass="HFOMainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ADK-IU-pMc"/>
+                        <viewControllerLayoutGuide type="bottom" id="g7t-AW-tzo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QVT-V0-jne">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiQ-VX-yco">
+                                <rect key="frame" x="106" y="124" width="108" height="86"/>
+                                <string key="text">扫码功能
+支持扫码
+支持本地相册
+支持iOS7+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="扫码结果" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YtP-8M-hDS">
+                                <rect key="frame" x="16" y="256.5" width="288" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GiQ-VX-yco" firstAttribute="top" secondItem="ADK-IU-pMc" secondAttribute="bottom" constant="60" id="EKp-cj-EZ5"/>
+                            <constraint firstItem="YtP-8M-hDS" firstAttribute="centerX" secondItem="GiQ-VX-yco" secondAttribute="centerX" id="LOD-pK-yfi"/>
+                            <constraint firstItem="GiQ-VX-yco" firstAttribute="centerX" secondItem="QVT-V0-jne" secondAttribute="centerX" id="N7X-ya-mmg"/>
+                            <constraint firstItem="YtP-8M-hDS" firstAttribute="top" secondItem="GiQ-VX-yco" secondAttribute="bottom" constant="46.5" id="Vw2-V4-9v5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YtP-8M-hDS" secondAttribute="trailing" id="gU6-73-FnH"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="YtP-8M-hDS" secondAttribute="leading" id="opG-1s-Z4S"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="H  F  O" id="IEm-XA-O2b">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xkd-BF-TYi">
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="scanButton:" destination="bzD-jg-Hq9" id="2gj-VT-bta"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="resultLab" destination="YtP-8M-hDS" id="YAb-g8-Cgp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8yp-ra-IDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1168" y="285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="S56-cY-8Wo">
+            <objects>
+                <navigationController storyboardIdentifier="Nav" automaticallyAdjustsScrollViewInsets="NO" id="gK2-F5-UVf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HxG-Jh-3t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bzD-jg-Hq9" kind="relationship" relationship="rootViewController" id="pJS-uL-1WL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VQ0-gc-8VN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743" y="285"/>
+        </scene>
+    </scenes>
+</document>

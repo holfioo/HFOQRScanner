@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		58F6A6491C3E0EDF000E93D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F6A6481C3E0EDF000E93D4 /* main.m */; };
 		58F6A64C1C3E0EDF000E93D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F6A64B1C3E0EDF000E93D4 /* AppDelegate.m */; };
-		58F6A6521C3E0EDF000E93D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F6A6501C3E0EDF000E93D4 /* Main.storyboard */; };
 		58F6A6541C3E0EDF000E93D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F6A6531C3E0EDF000E93D4 /* Assets.xcassets */; };
 		58F6A6571C3E0EDF000E93D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F6A6551C3E0EDF000E93D4 /* LaunchScreen.storyboard */; };
 		58F6A6621C3E0EDF000E93D4 /* HFOQRScannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F6A6611C3E0EDF000E93D4 /* HFOQRScannerTests.m */; };
 		58F6A66D1C3E0EDF000E93D4 /* HFOQRScannerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F6A66C1C3E0EDF000E93D4 /* HFOQRScannerUITests.m */; };
 		58F6A67C1C3E0F98000E93D4 /* HFOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F6A67B1C3E0F98000E93D4 /* HFOMainViewController.m */; };
+		58F6A67E1C3E1933000E93D4 /* HFOMainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F6A67D1C3E1933000E93D4 /* HFOMainViewController.storyboard */; };
 		A8BB7A5766EB9D52EA965E04 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0C781EA208D9B1BDB085C2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +41,6 @@
 		58F6A6481C3E0EDF000E93D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		58F6A64A1C3E0EDF000E93D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58F6A64B1C3E0EDF000E93D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		58F6A6511C3E0EDF000E93D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58F6A6531C3E0EDF000E93D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58F6A6561C3E0EDF000E93D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58F6A6581C3E0EDF000E93D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		58F6A66E1C3E0EDF000E93D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58F6A67A1C3E0F98000E93D4 /* HFOMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFOMainViewController.h; sourceTree = "<group>"; };
 		58F6A67B1C3E0F98000E93D4 /* HFOMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFOMainViewController.m; sourceTree = "<group>"; };
+		58F6A67D1C3E1933000E93D4 /* HFOMainViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HFOMainViewController.storyboard; sourceTree = "<group>"; };
 		BE0C781EA208D9B1BDB085C2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D32D08C4E98799521265CD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,11 +116,12 @@
 		58F6A6461C3E0EDF000E93D4 /* HFOQRScanner */ = {
 			isa = PBXGroup;
 			children = (
+				58F6A67F1C3E4219000E93D4 /* HFOQRCode */,
 				58F6A64A1C3E0EDF000E93D4 /* AppDelegate.h */,
 				58F6A64B1C3E0EDF000E93D4 /* AppDelegate.m */,
 				58F6A67A1C3E0F98000E93D4 /* HFOMainViewController.h */,
 				58F6A67B1C3E0F98000E93D4 /* HFOMainViewController.m */,
-				58F6A6501C3E0EDF000E93D4 /* Main.storyboard */,
+				58F6A67D1C3E1933000E93D4 /* HFOMainViewController.storyboard */,
 				58F6A6531C3E0EDF000E93D4 /* Assets.xcassets */,
 				58F6A6551C3E0EDF000E93D4 /* LaunchScreen.storyboard */,
 				58F6A6581C3E0EDF000E93D4 /* Info.plist */,
@@ -153,6 +154,13 @@
 				58F6A66E1C3E0EDF000E93D4 /* Info.plist */,
 			);
 			path = HFOQRScannerUITests;
+			sourceTree = "<group>";
+		};
+		58F6A67F1C3E4219000E93D4 /* HFOQRCode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HFOQRCode;
 			sourceTree = "<group>";
 		};
 		625F700836C0DEFD1ED3C2BF /* Pods */ = {
@@ -272,7 +280,7 @@
 			files = (
 				58F6A6571C3E0EDF000E93D4 /* LaunchScreen.storyboard in Resources */,
 				58F6A6541C3E0EDF000E93D4 /* Assets.xcassets in Resources */,
-				58F6A6521C3E0EDF000E93D4 /* Main.storyboard in Resources */,
+				58F6A67E1C3E1933000E93D4 /* HFOMainViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,14 +391,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		58F6A6501C3E0EDF000E93D4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				58F6A6511C3E0EDF000E93D4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		58F6A6551C3E0EDF000E93D4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -488,6 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HFOQRScanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HFO.QRScan.HFOQRScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,6 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HFOQRScanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HFO.QRScan.HFOQRScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
