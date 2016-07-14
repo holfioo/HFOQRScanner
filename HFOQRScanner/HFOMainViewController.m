@@ -15,8 +15,6 @@
 @implementation HFOMainViewController
 
 - (IBAction)scanButton:(id)sender {
-    NSString *abc = @"aaa-bbb-ccc";
-    NSString *cba = [abc stringByReplacingOccurrencesOfString:@"-" withString:@""];
-    NSLog(@"%@", cba);
+
 }
 @end
